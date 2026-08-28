@@ -48,8 +48,6 @@
     .btn-gold:hover { background: #FFD43B; transform: scale(1.03); }
     .btn-outline { background: transparent; border: 2px solid rgba(255,255,255,0.4); color: #fff; }
     .btn-outline:hover { border-color: #fff; transform: scale(1.03); }
-    .btn-purple { background: var(--purple); color: #fff; }
-    .btn-purple:hover { background: #9B4FDE; transform: scale(1.03); }
 
     /* ----- WAVES ----- */
     .wave-divider {
@@ -66,7 +64,6 @@
       height: 100%;
       display: block;
     }
-    .wave-top { transform: rotate(180deg); }
 
     /* ----- NAVIGATION ----- */
     header {
@@ -261,7 +258,7 @@
     .why-item h3 { font-size: 20px; margin-bottom: 8px; }
     .why-item p { color: var(--muted); font-size: 15px; }
 
-    /* ----- NEW: CORPORATE & ADMIN SERVICES ----- */
+    /* ----- CORPORATE & ADMIN SERVICES ----- */
     .corporate-services {
       padding: 80px 0;
       background: linear-gradient(180deg, var(--bg) 0%, #FFFFFF 100%);
@@ -484,6 +481,14 @@
       display: flex; align-items: center; justify-content: center;
       flex-shrink: 0; font-size: 18px;
     }
+    /* Founder avatar style */
+    .c-icon.avatar {
+      padding: 0; overflow: hidden; border-radius: 50%;
+      border: 2px solid var(--gold);
+    }
+    .c-icon.avatar img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
     .c-label { font-size: 12px; color: var(--muted); margin-bottom: 2px; }
     .c-value {
       font-family: 'IBM Plex Mono', monospace; font-size: 16px;
@@ -587,7 +592,7 @@
 <header>
   <nav>
     <div class="brand">
-      <img src="RJM.jpeg" alt="Expatriation 24Hrs" />
+      <img src="logo.jpeg" alt="Expatriation 24Hrs" />
       <span>EXPATRIATION <small>24HRS</small></span>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
@@ -605,7 +610,7 @@
 <!-- HERO -->
 <section class="hero">
   <div class="wrap hero-inner">
-    <img src="RJM.jpeg" alt="Expatriation 24Hrs" class="hero-logo" />
+    <img src="logo.jpeg" alt="Expatriation 24Hrs" class="hero-logo" />
     <div class="badge-live"><span class="dot"></span> AVAILABLE 24/7 · WHATSAPP READY</div>
     <h1>Bankable business plans &amp; <em>complete corporate services</em></h1>
     <p class="lead">From mining to marketing, we help you look credible, win tenders, and secure funding — all under one roof.</p>
@@ -684,7 +689,7 @@
   </div>
 </section>
 
-<!-- NEW: CORPORATE & ADMIN SERVICES -->
+<!-- CORPORATE & ADMIN SERVICES -->
 <section class="corporate-services" id="services">
   <div class="wrap">
     <div class="section-head">
@@ -694,7 +699,6 @@
     </div>
 
     <div class="service-cols">
-
       <!-- Column 1: Corporate Identity -->
       <div class="service-col">
         <span class="col-icon">🎨</span>
@@ -741,12 +745,11 @@
         <div class="price-tag-sm">From <span>R450</span> – R6,500</div>
         <a href="https://wa.me/2665742896" class="service-cta">Get a quote →</a>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- PRICING (Business Plans + Tender) -->
+<!-- PRICING -->
 <section class="pricing" id="pricing">
   <div class="wrap">
     <div class="section-head" style="text-align:center;">
@@ -755,7 +758,6 @@
       <p style="color:var(--muted);max-width:600px;margin:0 auto;">Fixed pricing, milestone billing. Quotes confirmed after a short intake call.</p>
     </div>
     <div class="price-grid">
-      <!-- Starter -->
       <div class="price-card">
         <h3>Starter Plan</h3>
         <p class="desc">Small loans, microgrants, internal planning</p>
@@ -768,7 +770,6 @@
         </ul>
         <a href="https://wa.me/2665742896" class="price-cta">Get started</a>
       </div>
-      <!-- Bankable (featured) -->
       <div class="price-card featured">
         <span class="price-tag">Most popular</span>
         <h3>Bankable Plan</h3>
@@ -782,7 +783,6 @@
         </ul>
         <a href="https://wa.me/2665742896" class="price-cta">Get started</a>
       </div>
-      <!-- Investor-Grade -->
       <div class="price-card">
         <h3>Investor-Grade Plan</h3>
         <p class="desc">VC, institutional raises, franchise approval</p>
@@ -795,7 +795,6 @@
         </ul>
         <a href="https://wa.me/2665742896" class="price-cta">Get started</a>
       </div>
-      <!-- Plan Review -->
       <div class="price-card">
         <h3>Plan Review &amp; Repair</h3>
         <p class="desc">Existing draft that was rejected</p>
@@ -808,7 +807,6 @@
         </ul>
         <a href="https://wa.me/2665742896" class="price-cta">Get started</a>
       </div>
-      <!-- Tender Application (new) -->
       <div class="price-card" style="grid-column: span 1;">
         <h3>Tender Application Services</h3>
         <p class="desc">Tender submission &amp; application support</p>
@@ -827,7 +825,7 @@
   </div>
 </section>
 
-<!-- PROCESS (with wave) -->
+<!-- PROCESS -->
 <div class="wave-divider">
   <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
     <path d="M0,40 C300,80 600,0 900,40 C1050,60 1150,20 1200,40 L1200,0 L0,0 Z" fill="#0B1A33" />
@@ -853,6 +851,17 @@
 <section class="contact" id="contact">
   <div class="wrap contact-grid">
     <div class="contact-card">
+      <!-- Founder Row (NEW) -->
+      <div class="contact-row">
+        <div class="c-icon avatar">
+          <img src="RJM.jpeg" alt="Joseph Mnyele" />
+        </div>
+        <div>
+          <div class="c-label">Founder</div>
+          <div class="c-value" style="font-family:'IBM Plex Sans',sans-serif; font-weight:600;">Joseph Mnyele</div>
+        </div>
+      </div>
+
       <div class="contact-row">
         <div class="c-icon">📞</div>
         <div>
@@ -897,7 +906,7 @@
   <div class="wrap">
     <div class="footer-top">
       <div class="footer-brand">
-        <img src="RJM.jpeg" alt="Expatriation 24Hrs" />
+        <img src="logo.jpeg" alt="Expatriation 24Hrs" />
         <span>EXPATRIATION 24HRS</span>
       </div>
       <div class="footer-links">
