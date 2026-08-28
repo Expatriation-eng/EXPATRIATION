@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expatriation 24Hrs — Bankable Business Plans, Any Industry</title>
+<meta name="description" content="Expatriation 24Hrs writes bankable business plans for mining, agriculture, IT and financial-services clients across South Africa — available 24 hours a day.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0F1F3D;
+    --navy-2:#1F3864;
+    --gold:#C79A2E;
+    --gold-light:#E4BE5C;
+    --purple:#5B2A86;
+    --purple-light:#7B4CAE;
+    --green:#3F7D32;
+    --bg:#FAF9F5;
+    --card:#FFFFFF;
+    --ink:#181A22;
+    --muted:#5B5E68;
+    --line:#E5E2D8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'IBM Plex Sans',sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'Space Grotesk',sans-serif;letter-spacing:-0.01em;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 28px;}
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--gold);
+  }
+
+  /* ===== NAV ===== */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(15,31,61,0.96);
+    backdrop-filter:blur(6px);
+  }
+  nav{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px 28px;max-width:1120px;margin:0 auto;
+  }
+  .brand{display:flex;align-items:center;gap:10px;}
+  .brand img{height:38px;width:38px;object-fit:contain;}
+  .brand span{color:#fff;font-weight:700;font-size:17px;font-family:'Space Grotesk',sans-serif;}
+  .navlinks{display:flex;gap:28px;align-items:center;}
+  .navlinks a{color:#D7DCEA;font-size:14px;font-weight:500;transition:color .15s;}
+  .navlinks a:hover{color:var(--gold-light);}
+  .nav-cta{
+    background:var(--gold);color:var(--navy);padding:9px 18px;border-radius:4px;
+    font-weight:600;font-size:14px;
+  }
+  .nav-cta:hover{background:var(--gold-light);}
+  .navtoggle{display:none;background:none;border:0;color:#fff;font-size:22px;cursor:pointer;}
+
+  /* ===== HERO ===== */
+  .hero{
+    background:var(--navy);
+    color:#fff;
+    padding:76px 0 84px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";
+    position:absolute;top:-140px;right:-140px;
+    width:480px;height:480px;border-radius:50%;
+    border:2px solid rgba(199,154,46,0.18);
+  }
+  .hero::after{
+    content:"";
+    position:absolute;bottom:-200px;left:-120px;
+    width:420px;height:420px;border-radius:50%;
+    border:2px solid rgba(91,42,134,0.22);
+  }
+  .hero-inner{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;text-align:center;}
+  .hero-logo{width:128px;height:128px;object-fit:contain;margin-bottom:28px;}
+  .badge-live{
+    display:inline-flex;align-items:center;gap:8px;
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.14);
+    padding:7px 14px;border-radius:999px;
+    font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.06em;
+    color:#D7DCEA;margin-bottom:22px;
+  }
+  .dot{width:7px;height:7px;border-radius:50%;background:#5CD98A;box-shadow:0 0 0 3px rgba(92,217,138,0.22);animation:pulse 1.8s ease-in-out infinite;}
+  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.4;}}
+  .hero h1{font-size:44px;line-height:1.12;max-width:760px;margin-bottom:18px;font-weight:700;}
+  .hero h1 em{font-style:normal;color:var(--gold-light);}
+  .hero p.lead{font-size:17px;color:#C7CCDC;max-width:560px;margin-bottom:34px;}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:13px 24px;border-radius:4px;font-weight:600;font-size:15px;
+    transition:transform .12s ease, background .15s;
+  }
+  .btn-primary{background:var(--gold);color:var(--navy);}
+  .btn-primary:hover{background:var(--gold-light);transform:translateY(-1px);}
+  .btn-outline{border:1px solid rgba(255,255,255,0.3);color:#fff;}
+  .btn-outline:hover{border-color:#fff;transform:translateY(-1px);}
+  .hero-tagline{
+    margin-top:44px;font-family:'IBM Plex Mono',monospace;font-size:12px;
+    letter-spacing:0.16em;text-transform:uppercase;color:#8A90A8;
+  }
+  .hero-tagline b{color:var(--gold-light);font-weight:500;}
+
+  /* ===== SECTORS (signature quadrant, echoes the logo) ===== */
+  .sectors{padding:68px 0 20px;}
+  .sectors-head{text-align:center;margin-bottom:40px;}
+  .sectors-head h2{font-size:28px;margin:8px 0 10px;}
+  .sectors-head p{color:var(--muted);max-width:560px;margin:0 auto;}
+  .quad-wrap{
+    display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;
+    max-width:560px;margin:0 auto;border-radius:16px;overflow:hidden;
+    border:1px solid var(--line);
+  }
+  .quad{
+    padding:30px 24px;background:var(--card);
+    border-right:1px solid var(--line);border-bottom:1px solid var(--line);
+    transition:background .15s;
+  }
+  .quad:nth-child(2){border-right:0;}
+  .quad:nth-child(3),.quad:nth-child(4){border-bottom:0;}
+  .quad:nth-child(4){border-right:0;}
+  .quad-icon{
+    width:40px;height:40px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    margin-bottom:14px;font-size:18px;font-weight:700;color:#fff;
+  }
+  .quad h3{font-size:16px;margin-bottom:6px;}
+  .quad p{font-size:13px;color:var(--muted);}
+  .q-mining .quad-icon{background:var(--gold);}
+  .q-agri .quad-icon{background:var(--green);}
+  .q-it .quad-icon{background:var(--navy-2);}
+  .q-fin .quad-icon{background:var(--purple);}
+
+  /* ===== WHY / VALUE ===== */
+  .why{padding:80px 0;background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin-top:40px;}
+  .why-item{padding-left:0;}
+  .why-num{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:13px;margin-bottom:10px;}
+  .why-item h3{font-size:18px;margin-bottom:8px;}
+  .why-item p{color:var(--muted);font-size:14.5px;}
+  .section-head{text-align:center;}
+  .section-head h2{font-size:28px;margin:8px 0 10px;}
+  .section-head p{color:var(--muted);max-width:600px;margin:0 auto;}
+
+  /* ===== PRICING ===== */
+  .pricing{padding:84px 0;}
+  .price-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:44px;
+  }
+  .price-card{
+    background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:26px 22px;display:flex;flex-direction:column;position:relative;
+  }
+  .price-card.featured{border:2px solid var(--gold);}
+  .price-tag{
+    position:absolute;top:-11px;left:22px;background:var(--gold);color:var(--navy);
+    font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;
+    letter-spacing:0.03em;
+  }
+  .price-card h3{font-size:16px;margin-bottom:6px;}
+  .price-card .desc{font-size:13px;color:var(--muted);margin-bottom:18px;min-height:34px;}
+  .price-amount{font-family:'IBM Plex Mono',monospace;font-size:20px;font-weight:500;color:var(--navy);margin-bottom:4px;}
+  .price-amount span{font-size:12px;color:var(--muted);font-weight:400;font-family:'IBM Plex Sans',sans-serif;}
+  .price-turn{font-size:12.5px;color:var(--muted);margin-bottom:18px;}
+  .price-list{list-style:none;margin-bottom:22px;flex-grow:1;}
+  .price-list li{font-size:13px;color:var(--ink);padding:6px 0 6px 18px;position:relative;border-top:1px solid var(--line);}
+  .price-list li:first-child{border-top:0;}
+  .price-list li::before{content:"—";position:absolute;left:0;color:var(--gold);}
+  .price-cta{
+    text-align:center;padding:11px;border-radius:4px;font-weight:600;font-size:13.5px;
+    background:var(--navy);color:#fff;
+  }
+  .price-cta:hover{background:var(--navy-2);}
+  .price-note{text-align:center;font-size:13px;color:var(--muted);margin-top:28px;}
+
+  /* ===== PROCESS ===== */
+  .process{padding:84px 0;background:var(--navy);color:#fff;}
+  .process .section-head p{color:#B9C0D6;}
+  .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:48px;counter-reset:step;}
+  .step{position:relative;padding-top:8px;}
+  .step-n{
+    font-family:'IBM Plex Mono',monospace;color:var(--gold-light);font-size:13px;margin-bottom:10px;display:block;
+  }
+  .step h3{font-size:14.5px;margin-bottom:8px;color:#fff;}
+  .step p{font-size:12.5px;color:#AEB4CB;}
+  .step:not(:last-child)::after{
+    content:"";position:absolute;top:14px;left:calc(100% - 4px);width:calc(100% - 20px);
+    height:1px;background:rgba(255,255,255,0.16);
+  }
+
+  /* ===== CONTACT ===== */
+  .contact{padding:84px 0;}
+  .contact-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:52px;align-items:start;margin-top:20px;}
+  .contact-card{
+    background:var(--card);border:1px solid var(--line);border-radius:14px;padding:32px;
+  }
+  .contact-row{display:flex;align-items:center;gap:14px;padding:14px 0;border-top:1px solid var(--line);}
+  .contact-row:first-child{border-top:0;padding-top:0;}
+  .c-icon{
+    width:38px;height:38px;border-radius:8px;background:var(--bg);border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px;
+  }
+  .c-label{font-size:12px;color:var(--muted);margin-bottom:2px;}
+  .c-value{font-family:'IBM Plex Mono',monospace;font-size:15px;color:var(--ink);}
+  .whatsapp-btn{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    background:#25D366;color:#fff;padding:15px;border-radius:8px;font-weight:600;
+    margin-top:22px;font-size:15px;
+  }
+  .whatsapp-btn:hover{background:#1FBE5A;}
+  .contact-side h2{font-size:26px;margin-bottom:14px;}
+  .contact-side p{color:var(--muted);margin-bottom:20px;}
+  .contact-side ul{list-style:none;}
+  .contact-side li{
+    font-size:14px;color:var(--ink);padding:9px 0;border-top:1px solid var(--line);
+    padding-left:20px;position:relative;
+  }
+  .contact-side li:first-child{border-top:0;}
+  .contact-side li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:700;}
+
+  /* ===== FOOTER ===== */
+  footer{background:var(--navy);color:#B9C0D6;padding:40px 0 26px;}
+  .footer-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,0.1);}
+  .footer-brand{display:flex;align-items:center;gap:10px;}
+  .footer-brand img{height:30px;width:30px;object-fit:contain;}
+  .footer-brand span{color:#fff;font-weight:600;font-family:'Space Grotesk',sans-serif;}
+  .footer-values{
+    font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.1em;text-transform:uppercase;
+    color:#8A90A8;text-align:center;padding-top:22px;
+  }
+  .footer-values b{color:var(--gold-light);font-weight:500;}
+  .footer-legal{font-size:12.5px;color:#7A8098;text-align:center;margin-top:10px;}
+
+  @media (max-width: 880px){
+    .navlinks{display:none;}
+    .why-grid{grid-template-columns:1fr;}
+    .price-grid{grid-template-columns:1fr 1fr;}
+    .steps{grid-template-columns:1fr 1fr;}
+    .step:not(:last-child)::after{display:none;}
+    .contact-grid{grid-template-columns:1fr;}
+    .quad-wrap{max-width:100%;}
+    .hero h1{font-size:32px;}
+  }
+  @media (max-width: 560px){
+    .price-grid{grid-template-columns:1fr;}
+    .steps{grid-template-columns:1fr;}
+    .footer-top{flex-direction:column;text-align:center;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="brand">
+      <img src="assets/logo.jpeg" alt="Expatriation 24Hrs logo">
+      <span>EXPATRIATION 24HRS</span>
+    </div>
+    <div class="navlinks">
+      <a href="#sectors">Industries</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+      <a href="https://wa.me/26657428997" class="nav-cta">WhatsApp us</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <img src="assets/logo.jpeg" alt="Expatriation 24Hrs" class="hero-logo">
+    <div class="badge-live"><span class="dot"></span> AVAILABLE 24 HOURS · WHATSAPP READY NOW</div>
+    <h1>Bankable business plans for <em>any industry</em>, built to survive scrutiny.</h1>
+    <p class="lead">We write the plan a bank, SBA-style lender, or investor actually relies on to release money — not a template with your name swapped in. Mining, agriculture, IT, financial services, and beyond.</p>
+    <div class="hero-ctas">
+      <a href="https://wa.me/26657428997" class="btn btn-primary">Chat on WhatsApp</a>
+      <a href="#pricing" class="btn btn-outline">See pricing in Rands</a>
+    </div>
+    <div class="hero-tagline"><b>Innovation</b> · <b>Integrity</b> · <b>Growth</b> · <b>Partnership</b></div>
+  </div>
+</section>
+
+<section class="sectors" id="sectors">
+  <div class="wrap">
+    <div class="sectors-head">
+      <span class="eyebrow">Industries served</span>
+      <h2>One process, built for four sectors — and beyond</h2>
+      <p>Our plans are structured around what your specific funder is evaluating, whichever industry you operate in.</p>
+    </div>
+    <div class="quad-wrap">
+      <div class="quad q-mining">
+        <div class="quad-icon">M</div>
+        <h3>Mining</h3>
+        <p>Feasibility-aligned narratives, capex schedules, and resource-to-revenue models lenders trust.</p>
+      </div>
+      <div class="quad q-agri">
+        <div class="quad-icon">A</div>
+        <h3>Agriculture</h3>
+        <p>Seasonal cash-flow modelling, land and equipment financing plans, cooperative and export structures.</p>
+      </div>
+      <div class="quad q-it">
+        <div class="quad-icon">IT</div>
+        <h3>Information Technology</h3>
+        <p>SaaS metrics, unit economics, and investor-grade decks for seed and Series A raises.</p>
+      </div>
+      <div class="quad q-fin">
+        <div class="quad-icon">R</div>
+        <h3>Financial Services</h3>
+        <p>Regulatory-aware plans for fintech, micro-lending, and advisory businesses.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Why Expatriation 24Hrs</span>
+      <h2>Built to be relied on, not just read</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <span class="why-num">01</span>
+        <h3>Real financial models</h3>
+        <p>Every plan ships with a working 3–5 year model built on your own numbers, with assumptions and sensitivity — not filler figures.</p>
+      </div>
+      <div class="why-item">
+        <span class="why-num">02</span>
+        <h3>Milestone payment protection</h3>
+        <p>You pay in stages tied to delivery, not one lump sum upfront. You always know exactly what you've paid for.</p>
+      </div>
+      <div class="why-item">
+        <span class="why-num">03</span>
+        <h3>24-hour turnaround start</h3>
+        <p>Intake and WhatsApp support run around the clock, so your engagement can begin the same day you reach out.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Pricing, in South African Rand</span>
+      <h2>Choose the tier that matches your raise</h2>
+      <p>Fixed pricing, milestone billing. Figures below are starting ranges — your quote is confirmed after a short intake call.</p>
+    </div>
+    <div class="price-grid">
+      <div class="price-card">
+        <h3>Starter Plan</h3>
+        <p class="desc">Small loans, microgrants, internal planning</p>
+        <div class="price-amount">R4 500 <span>– R7 500</span></div>
+        <div class="price-turn">5–7 business days</div>
+        <ul class="price-list">
+          <li>15–20 page plan</li>
+          <li>3-year summary financials</li>
+          <li>One revision round</li>
+        </ul>
+        <a href="https://wa.me/26657428997" class="price-cta">Get started</a>
+      </div>
+      <div class="price-card featured">
+        <span class="price-tag">Most popular</span>
+        <h3>Bankable Plan</h3>
+        <p class="desc">Bank loans, SBA-style lending, angel raises</p>
+        <div class="price-amount">R11 500 <span>– R23 000</span></div>
+        <div class="price-turn">10–14 business days</div>
+        <ul class="price-list">
+          <li>25–35 page plan</li>
+          <li>Full 3–5 year financial model</li>
+          <li>Sensitivity analysis</li>
+        </ul>
+        <a href="https://wa.me/26657428997" class="price-cta">Get started</a>
+      </div>
+      <div class="price-card">
+        <h3>Investor-Grade Plan</h3>
+        <p class="desc">VC, institutional raises, franchise approval</p>
+        <div class="price-amount">R32 000 <span>– R75 000+</span></div>
+        <div class="price-turn">3–4 weeks</div>
+        <ul class="price-list">
+          <li>Full plan + pitch deck</li>
+          <li>Cap table + data room checklist</li>
+          <li>Unlimited revision round</li>
+        </ul>
+        <a href="https://wa.me/26657428997" class="price-cta">Get started</a>
+      </div>
+      <div class="price-card">
+        <h3>Plan Review &amp; Repair</h3>
+        <p class="desc">Existing draft that was rejected</p>
+        <div class="price-amount">R3 200 <span>– R5 800</span></div>
+        <div class="price-turn">5 business days</div>
+        <ul class="price-list">
+          <li>Gap analysis</li>
+          <li>Rewrite of weak sections</li>
+          <li>Lender-readiness check</li>
+        </ul>
+        <a href="https://wa.me/26657428997" class="price-cta">Get started</a>
+      </div>
+    </div>
+    <p class="price-note">All tiers include one structured intake call and a financial model built in your own numbers.</p>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">How it works</span>
+      <h2>From intake call to funding-ready document</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="step-n">01</span><h3>Intake &amp; deposit</h3><p>Short call to scope your funding target; deposit invoice sent and paid.</p></div>
+      <div class="step"><span class="step-n">02</span><h3>Data collection</h3><p>Structured questionnaire gathers your numbers and market context.</p></div>
+      <div class="step"><span class="step-n">03</span><h3>Model &amp; research</h3><p>Financial model and market analysis built around your specific funder.</p></div>
+      <div class="step"><span class="step-n">04</span><h3>Draft &amp; review</h3><p>Draft delivered, milestone invoice sent, one structured feedback round.</p></div>
+      <div class="step"><span class="step-n">05</span><h3>Final delivery</h3><p>Finished plan in Word and PDF, plus the underlying Excel model.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-card">
+      <div class="contact-row">
+        <div class="c-icon">☎</div>
+        <div>
+          <div class="c-label">Call us</div>
+          <a class="c-value" href="tel:+27718967799">+27 71 896 7799</a>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="c-icon">☎</div>
+        <div>
+          <div class="c-label">Call us (alt line)</div>
+          <a class="c-value" href="tel:+26657428997">+266 5742 8997</a>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="c-icon">✉</div>
+        <div>
+          <div class="c-label">WhatsApp</div>
+          <a class="c-value" href="https://wa.me/26657428997">+266 5742 8997</a>
+        </div>
+      </div>
+      <a href="https://wa.me/26657428997" class="whatsapp-btn">Message us on WhatsApp now</a>
+    </div>
+    <div class="contact-side">
+      <span class="eyebrow">Get in touch</span>
+      <h2>Start your funding conversation today</h2>
+      <p>Reach out any hour — intake and quotes run 24/7. Tell us your industry and funding target, and we'll confirm the right tier and price on WhatsApp.</p>
+      <ul>
+        <li>Response within the hour, day or night</li>
+        <li>Free 10-minute scoping call</li>
+        <li>Fixed price confirmed before you commit</li>
+        <li>Payments accepted via EFT, card, or invoice</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/logo.jpeg" alt="Expatriation 24Hrs">
+        <span>EXPATRIATION 24HRS</span>
+      </div>
+      <div class="navlinks" style="display:flex;">
+        <a href="#sectors">Industries</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-values"><b>Innovation</b> &nbsp;·&nbsp; <b>Integrity</b> &nbsp;·&nbsp; <b>Growth</b> &nbsp;·&nbsp; <b>Partnership</b></div>
+    <div class="footer-legal">&copy; 2026 Expatriation 24Hrs. Mining · Agriculture · IT · Financial Services. Prices in ZAR, confirmed at intake.</div>
+  </div>
+</footer>
+
+</body>
+</html>
