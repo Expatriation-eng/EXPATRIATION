@@ -3,14 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EXPATRIATION 24HRS — Corporate Transport & Repatriation Solutions</title>
-  <meta name="description" content="Expatriation CTS offers dignified repatriation, corporate transport, and logistics across South Africa, Lesotho, and Eswatini. Available 24/7." />
+  <title>EXPATRIATION 24HRS — CTS, Business Plans &amp; Corporate Services</title>
+  <meta name="description" content="Expatriation CTS offers dignified repatriation, corporate transport, bankable business plans, branding, marketing, and admin support. Available 24/7." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet" />
   <style>
-    /* ----- RESET & VARIABLES (White, Gold, Fire, Diamond White) ----- */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    /* ----- RESET & VARIABLES (White, Gold, Fire, Diamond) ----- */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
     :root {
       --white: #FFFFFF;
       --diamond: #F8F5F0;
@@ -18,12 +22,14 @@
       --gold-light: #F5D06B;
       --fire: #FF5722;
       --fire-dark: #BF360C;
-      --fire-glow: rgba(255, 87, 34, 0.12);
       --ink: #1A1A1A;
       --muted: #5A5A5A;
       --line: #E8E3DA;
+      --navy: #0B1A33;
     }
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       font-family: 'IBM Plex Sans', sans-serif;
       color: var(--ink);
@@ -31,30 +37,78 @@
       line-height: 1.6;
       overflow-x: hidden;
     }
-    h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.02em; }
-    img { max-width: 100%; display: block; }
-    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
-
-    /* ----- BUTTONS (Gold & Fire) ----- */
-    .btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 14px 32px; border-radius: 50px; font-weight: 600;
-      font-size: 15px; transition: all 0.25s ease; border: none;
-      cursor: pointer; text-decoration: none;
+    h1,
+    h2,
+    h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      letter-spacing: -0.02em;
     }
-    .btn-gold { background: var(--gold); color: var(--ink); }
-    .btn-gold:hover { background: var(--gold-light); transform: scale(1.03); box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3); }
-    .btn-fire { background: var(--fire); color: #fff; }
-    .btn-fire:hover { background: var(--fire-dark); transform: scale(1.03); box-shadow: 0 8px 20px rgba(255, 87, 34, 0.3); }
-    .btn-outline { background: transparent; border: 2px solid rgba(255,255,255,0.5); color: #fff; }
-    .btn-outline:hover { border-color: #fff; background: rgba(255,255,255,0.05); transform: scale(1.03); }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+    .wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
 
-    /* ----- WAVES (Gold/White accents) ----- */
+    /* ----- BUTTONS ----- */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 15px;
+      transition: all 0.25s ease;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn-gold {
+      background: var(--gold);
+      color: var(--ink);
+    }
+    .btn-gold:hover {
+      background: var(--gold-light);
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+    }
+    .btn-fire {
+      background: var(--fire);
+      color: #fff;
+    }
+    .btn-fire:hover {
+      background: var(--fire-dark);
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(255, 87, 34, 0.3);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      color: #fff;
+    }
+    .btn-outline:hover {
+      border-color: #fff;
+      background: rgba(255, 255, 255, 0.05);
+      transform: scale(1.03);
+    }
+    .btn-dark {
+      background: var(--navy);
+      color: #fff;
+    }
+    .btn-dark:hover {
+      background: #1A2F4E;
+      transform: scale(1.03);
+    }
+
+    /* ----- WAVES ----- */
     .wave-divider {
       position: relative;
       width: 100%;
       height: 80px;
-      background: var(--ink);
       overflow: hidden;
     }
     .wave-divider svg {
@@ -67,106 +121,184 @@
 
     /* ----- NAVIGATION ----- */
     header {
-      position: sticky; top: 0; z-index: 100;
+      position: sticky;
+      top: 0;
+      z-index: 100;
       background: rgba(26, 26, 26, 0.96);
       backdrop-filter: blur(8px);
       border-bottom: 2px solid var(--gold);
     }
     nav {
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 10px 24px; max-width: 1120px; margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 24px;
+      max-width: 1120px;
+      margin: 0 auto;
     }
     .brand {
-      display: flex; align-items: center; gap: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
     }
     .brand img {
-      height: 40px; width: 40px; object-fit: contain;
+      height: 40px;
+      width: 40px;
+      object-fit: contain;
       background: rgba(212, 175, 55, 0.15);
-      border-radius: 8px; padding: 4px;
+      border-radius: 8px;
+      padding: 4px;
     }
     .brand span {
-      color: #fff; font-weight: 700; font-size: 18px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 18px;
       font-family: 'Space Grotesk', sans-serif;
     }
-    .brand span small { color: var(--gold); font-weight: 500; font-size: 13px; display: block; line-height: 1; }
+    .brand span small {
+      color: var(--gold);
+      font-weight: 500;
+      font-size: 13px;
+      display: block;
+      line-height: 1;
+    }
 
     .navlinks {
-      display: flex; gap: 28px; align-items: center;
+      display: flex;
+      gap: 28px;
+      align-items: center;
     }
     .navlinks a {
-      color: #D7DCEA; font-size: 14px; font-weight: 500;
-      transition: color 0.2s; text-decoration: none;
+      color: #D7DCEA;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+      text-decoration: none;
     }
-    .navlinks a:hover { color: var(--gold); }
+    .navlinks a:hover {
+      color: var(--gold);
+    }
     .nav-cta {
-      background: var(--fire); color: #fff; padding: 8px 20px;
-      border-radius: 50px; font-weight: 600; font-size: 14px;
+      background: var(--fire);
+      color: #fff;
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 14px;
     }
-    .nav-cta:hover { background: var(--fire-dark); }
+    .nav-cta:hover {
+      background: var(--fire-dark);
+    }
 
     .hamburger {
-      display: none; background: none; border: 0; color: #fff;
-      font-size: 28px; cursor: pointer; padding: 4px;
+      display: none;
+      background: none;
+      border: 0;
+      color: #fff;
+      font-size: 28px;
+      cursor: pointer;
+      padding: 4px;
     }
 
-    /* ----- HERO (Fire & Gold) ----- */
+    /* ----- HERO (Main - Expatriation CTS) ----- */
     .hero {
       background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 100%);
-      color: #fff; padding: 60px 0 80px;
-      position: relative; overflow: hidden;
+      color: #fff;
+      padding: 60px 0 80px;
+      position: relative;
+      overflow: hidden;
     }
     .hero::before {
-      content: ''; position: absolute; top: -30%; right: -20%;
-      width: 600px; height: 600px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(212,175,55,0.08) 0%, transparent 70%);
+      content: '';
+      position: absolute;
+      top: -30%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
       animation: float 8s ease-in-out infinite alternate;
     }
     .hero::after {
-      content: ''; position: absolute; bottom: -30%; left: -20%;
-      width: 600px; height: 600px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(255,87,34,0.08) 0%, transparent 70%);
+      content: '';
+      position: absolute;
+      bottom: -30%;
+      left: -20%;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 87, 34, 0.08) 0%, transparent 70%);
       animation: float 10s ease-in-out infinite alternate-reverse;
     }
     @keyframes float {
-      0% { transform: translate(0, 0) scale(1); }
-      100% { transform: translate(30px, -30px) scale(1.1); }
+      0% {
+        transform: translate(0, 0) scale(1);
+      }
+      100% {
+        transform: translate(30px, -30px) scale(1.1);
+      }
     }
 
     .hero-inner {
-      position: relative; z-index: 2;
-      display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
       align-items: center;
     }
     .hero-text h1 {
-      font-size: 48px; line-height: 1.1; margin-bottom: 12px;
+      font-size: 48px;
+      line-height: 1.1;
+      margin-bottom: 12px;
     }
-    .hero-text h1 em { font-style: normal; color: var(--gold); }
+    .hero-text h1 em {
+      font-style: normal;
+      color: var(--gold);
+    }
     .hero-text .sub-brand {
-      font-size: 22px; font-family: 'Space Grotesk', sans-serif;
-      color: var(--gold-light); letter-spacing: 0.05em;
+      font-size: 22px;
+      font-family: 'Space Grotesk', sans-serif;
+      color: var(--gold-light);
+      letter-spacing: 0.05em;
       margin-bottom: 16px;
-      border-left: 4px solid var(--fire); padding-left: 16px;
+      border-left: 4px solid var(--fire);
+      padding-left: 16px;
     }
     .hero-text p {
-      font-size: 17px; color: #C7C7C7; max-width: 500px; margin-bottom: 28px;
+      font-size: 17px;
+      color: #C7C7C7;
+      max-width: 500px;
+      margin-bottom: 28px;
     }
     .hero-tagline {
-      display: flex; flex-wrap: wrap; gap: 18px;
-      font-family: 'IBM Plex Mono', monospace; font-size: 13px;
-      letter-spacing: 0.05em; text-transform: uppercase; color: #8A8A8A;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #8A8A8A;
       margin-top: 24px;
     }
-    .hero-tagline span { color: var(--gold); font-weight: 500; }
+    .hero-tagline span {
+      color: var(--gold);
+      font-weight: 500;
+    }
 
     .hero-image img {
-      width: 100%; border-radius: 20px;
+      width: 100%;
+      border-radius: 20px;
       border: 3px solid var(--gold);
-      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
       transition: transform 0.3s ease;
     }
-    .hero-image img:hover { transform: scale(1.01); }
+    .hero-image img:hover {
+      transform: scale(1.01);
+    }
 
-    /* ----- PARTNERSHIP BANNER (Fire) ----- */
+    /* ----- PARTNERSHIP BANNER ----- */
     .partnership-banner {
       background: var(--fire);
       padding: 28px 0;
@@ -175,8 +307,11 @@
       border-bottom: 4px solid var(--gold);
     }
     .partnership-banner p {
-      color: #fff; font-size: 20px; font-weight: 600;
-      max-width: 800px; margin: 0 auto;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 600;
+      max-width: 800px;
+      margin: 0 auto;
       font-family: 'Space Grotesk', sans-serif;
     }
     .partnership-banner strong {
@@ -184,74 +319,66 @@
       text-decoration: underline;
     }
 
-    /* ----- SERVICES (Sectors) ----- */
-    .sectors {
-      padding: 80px 0 40px;
+    /* ========================================
+                   SECTION 1: REPATRIATION & FLEET
+               ======================================== */
+    .repatriation-main {
+      padding: 80px 0;
       background: var(--white);
     }
-    .sectors-head { text-align: center; margin-bottom: 48px; }
-    .sectors-head .eyebrow {
-      font-family: 'IBM Plex Mono', monospace; font-size: 12px;
-      letter-spacing: 0.14em; text-transform: uppercase;
+    .repatriation-main .section-head {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .repatriation-main .section-head .eyebrow {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
       color: var(--fire);
     }
-    .sectors-head h2 { font-size: 36px; margin: 8px 0 10px; color: var(--ink); }
-    .sectors-head p { color: var(--muted); max-width: 600px; margin: 0 auto; }
-
-    .service-grid {
-      display: grid; grid-template-columns: repeat(4, 1fr);
-      gap: 24px; margin-top: 20px;
+    .repatriation-main .section-head h2 {
+      font-size: 36px;
+      margin: 8px 0 10px;
+      color: var(--ink);
     }
-    .service-card {
-      background: var(--diamond); padding: 28px 20px;
-      border-radius: 16px; text-align: center;
-      border: 1px solid var(--line);
-      transition: all 0.25s ease;
-    }
-    .service-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 30px rgba(212,175,55,0.12);
-      border-color: var(--gold);
-    }
-    .service-card .icon { font-size: 32px; margin-bottom: 12px; display: block; }
-    .service-card h3 { font-size: 18px; margin-bottom: 6px; }
-    .service-card p { font-size: 14px; color: var(--muted); }
-
-    /* ----- FLEET / VEHICLES (Gold & White) ----- */
-    .fleet {
-      padding: 80px 0;
-      background: var(--diamond);
-    }
-    .fleet-head { text-align: center; margin-bottom: 48px; }
-    .fleet-head .eyebrow {
-      font-family: 'IBM Plex Mono', monospace; font-size: 12px;
-      letter-spacing: 0.14em; text-transform: uppercase;
+    .repatriation-main .section-head h2 .fire {
       color: var(--fire);
     }
-    .fleet-head h2 { font-size: 36px; margin: 8px 0 10px; }
-    .fleet-head p { color: var(--muted); max-width: 600px; margin: 0 auto; }
+    .repatriation-main .section-head p {
+      color: var(--muted);
+      max-width: 700px;
+      margin: 0 auto;
+    }
 
     .fleet-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 40px;
+      margin-top: 20px;
     }
     .fleet-card {
-      background: var(--white);
+      background: var(--diamond);
       border-radius: 24px;
       padding: 36px 28px;
       border: 1px solid var(--line);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.03);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
       transition: all 0.3s ease;
     }
     .fleet-card:hover {
-      box-shadow: 0 16px 40px rgba(212,175,55,0.08);
+      box-shadow: 0 16px 40px rgba(212, 175, 55, 0.08);
       border-color: var(--gold);
     }
     .fleet-card h3 {
-      font-size: 28px; color: var(--ink);
+      font-size: 28px;
+      color: var(--ink);
       margin-bottom: 4px;
     }
-    .fleet-card h3 small { font-size: 16px; color: var(--muted); font-weight: 400; }
+    .fleet-card h3 small {
+      font-size: 16px;
+      color: var(--muted);
+      font-weight: 400;
+    }
     .fleet-card .vehicle-tag {
       display: inline-block;
       background: var(--fire);
@@ -264,18 +391,23 @@
       margin-bottom: 16px;
     }
     .fleet-card ul {
-      list-style: none; margin-top: 16px;
+      list-style: none;
+      margin-top: 16px;
     }
     .fleet-card ul li {
-      font-size: 15px; color: var(--ink);
+      font-size: 15px;
+      color: var(--ink);
       padding: 8px 0 8px 28px;
       position: relative;
       border-bottom: 1px solid var(--line);
     }
-    .fleet-card ul li:last-child { border-bottom: 0; }
+    .fleet-card ul li:last-child {
+      border-bottom: 0;
+    }
     .fleet-card ul li::before {
       content: "✦";
-      position: absolute; left: 0;
+      position: absolute;
+      left: 0;
       color: var(--gold);
       font-weight: 700;
     }
@@ -284,47 +416,386 @@
       font-weight: 600;
     }
 
-    /* ----- WHY CHOOSE US (Fire/Gold) ----- */
+    .repat-coverage {
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+      background: var(--diamond);
+      padding: 40px 30px;
+      border-radius: 20px;
+      border: 1px solid var(--line);
+    }
+    .repat-coverage .coverage-item {
+      text-align: center;
+    }
+    .repat-coverage .coverage-item .icon {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+    .repat-coverage .coverage-item h4 {
+      font-size: 18px;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+    .repat-coverage .coverage-item p {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* ========================================
+               SECTION 2: CORPORATE TRANSPORT SERVICES
+            ======================================== */
+    .corporate-transport {
+      padding: 80px 0;
+      background: var(--diamond);
+    }
+    .corporate-transport .section-head {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .corporate-transport .section-head .eyebrow {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--fire);
+    }
+    .corporate-transport .section-head h2 {
+      font-size: 32px;
+      margin: 8px 0 10px;
+      color: var(--ink);
+    }
+    .corporate-transport .section-head p {
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .transport-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 20px;
+    }
+    .transport-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 28px 20px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--line);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-align: center;
+    }
+    .transport-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+    }
+    .transport-card .emoji {
+      font-size: 32px;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .transport-card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: var(--navy);
+    }
+    .transport-card p {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* ========================================
+               SECTION 3: BUSINESS PLANS & ADMIN SERVICES (ALL OTHER SERVICES)
+            ======================================== */
+    .business-services {
+      padding: 80px 0;
+      background: var(--white);
+    }
+    .business-services .section-head {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .business-services .section-head .eyebrow {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--fire);
+    }
+    .business-services .section-head h2 {
+      font-size: 32px;
+      margin: 8px 0 10px;
+      color: var(--ink);
+    }
+    .business-services .section-head p {
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .service-cols {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 20px;
+    }
+    .service-col {
+      background: var(--diamond);
+      border-radius: 20px;
+      padding: 32px 24px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--line);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .service-col:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+    }
+    .service-col .col-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .service-col h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: var(--navy);
+    }
+    .service-col h3 span {
+      color: var(--gold);
+    }
+    .service-col ul {
+      list-style: none;
+      margin: 12px 0 16px;
+    }
+    .service-col ul li {
+      font-size: 14px;
+      color: var(--ink);
+      padding: 6px 0 6px 24px;
+      position: relative;
+      border-bottom: 1px solid var(--line);
+    }
+    .service-col ul li:last-child {
+      border-bottom: 0;
+    }
+    .service-col ul li::before {
+      content: "✦";
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+    }
+    .service-col .price-tag-sm {
+      display: inline-block;
+      background: var(--navy);
+      color: #fff;
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 14px;
+      margin-top: 8px;
+    }
+    .service-col .price-tag-sm span {
+      color: var(--gold);
+    }
+    .service-col .service-cta {
+      display: inline-block;
+      margin-top: 16px;
+      color: var(--fire);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 2px solid var(--fire);
+      padding-bottom: 2px;
+      transition: color 0.2s;
+    }
+    .service-col .service-cta:hover {
+      color: var(--gold);
+      border-bottom-color: var(--gold);
+    }
+
+    /* ----- PRICING CARDS (Business Plans) ----- */
+    .price-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .price-card {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 28px 22px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      border: 2px solid var(--line);
+      transition: all 0.25s ease;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+    }
+    .price-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+    }
+    .price-card.featured {
+      border-color: var(--gold);
+      background: #FFFDF5;
+    }
+    .price-tag {
+      position: absolute;
+      top: -12px;
+      left: 24px;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 999px;
+      letter-spacing: 0.03em;
+    }
+    .price-card h3 {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+    .price-card .desc {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 16px;
+      min-height: 40px;
+    }
+    .price-amount {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+    .price-amount span {
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 400;
+      font-family: 'IBM Plex Sans', sans-serif;
+    }
+    .price-turn {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+    .price-list {
+      list-style: none;
+      margin-bottom: 22px;
+      flex-grow: 1;
+    }
+    .price-list li {
+      font-size: 14px;
+      color: var(--ink);
+      padding: 6px 0 6px 20px;
+      position: relative;
+      border-top: 1px solid var(--line);
+    }
+    .price-list li:first-child {
+      border-top: 0;
+    }
+    .price-list li::before {
+      content: "✦";
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+    }
+    .price-cta {
+      text-align: center;
+      padding: 12px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 14px;
+      background: var(--navy);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+      text-decoration: none;
+      display: block;
+    }
+    .price-cta:hover {
+      background: #1A2F4E;
+    }
+
+    /* ========================================
+               SECTION 4: WHY US
+            ======================================== */
     .why-cts {
       padding: 80px 0;
       background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 100%);
       color: #fff;
     }
-    .why-cts .wrap { position: relative; z-index: 2; }
-    .why-cts .section-head { text-align: center; margin-bottom: 48px; }
+    .why-cts .wrap {
+      position: relative;
+      z-index: 2;
+    }
+    .why-cts .section-head {
+      text-align: center;
+      margin-bottom: 48px;
+    }
     .why-cts .section-head .eyebrow {
-      font-family: 'IBM Plex Mono', monospace; font-size: 12px;
-      letter-spacing: 0.14em; text-transform: uppercase;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
       color: var(--gold);
     }
-    .why-cts .section-head h2 { font-size: 36px; color: #fff; }
-    .why-cts .section-head p { color: #B9B9B9; max-width: 600px; margin: 0 auto; }
+    .why-cts .section-head h2 {
+      font-size: 36px;
+      color: #fff;
+    }
+    .why-cts .section-head p {
+      color: #B9B9B9;
+      max-width: 600px;
+      margin: 0 auto;
+    }
 
     .why-grid {
-      display: grid; grid-template-columns: repeat(4, 1fr);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
       gap: 24px;
     }
     .why-item {
-      background: rgba(255,255,255,0.04);
+      background: rgba(255, 255, 255, 0.04);
       padding: 28px 20px;
       border-radius: 16px;
       text-align: center;
-      border: 1px solid rgba(255,255,255,0.06);
+      border: 1px solid rgba(255, 255, 255, 0.06);
       transition: background 0.25s ease;
     }
-    .why-item:hover { background: rgba(212,175,55,0.06); }
-    .why-item .icon { font-size: 28px; margin-bottom: 12px; display: block; }
-    .why-item h3 { font-size: 18px; color: var(--gold); margin-bottom: 8px; }
-    .why-item p { font-size: 14px; color: #B9B9B9; }
+    .why-item:hover {
+      background: rgba(212, 175, 55, 0.06);
+    }
+    .why-item .icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .why-item h3 {
+      font-size: 18px;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    .why-item p {
+      font-size: 14px;
+      color: #B9B9B9;
+    }
 
-    /* ----- CONTACT (White / Gold) ----- */
+    /* ========================================
+               CONTACT (RJM.jpeg & all numbers)
+            ======================================== */
     .contact {
       padding: 80px 0;
       background: var(--white);
     }
     .contact-grid {
-      display: grid; grid-template-columns: 1.1fr 0.9fr;
-      gap: 48px; align-items: start; margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
+      align-items: start;
+      margin-top: 20px;
     }
     .contact-card {
       background: var(--diamond);
@@ -333,47 +804,99 @@
       border: 1px solid var(--line);
     }
     .contact-row {
-      display: flex; align-items: center; gap: 16px;
-      padding: 16px 0; border-top: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 0;
+      border-top: 1px solid var(--line);
     }
-    .contact-row:first-child { border-top: 0; padding-top: 0; }
+    .contact-row:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
     .c-icon {
-      width: 44px; height: 44px; border-radius: 12px;
-      background: var(--white); border: 1px solid var(--line);
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0; font-size: 18px;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 18px;
     }
     .c-icon.avatar {
-      padding: 0; overflow: hidden; border-radius: 50%;
+      padding: 0;
+      overflow: hidden;
+      border-radius: 50%;
       border: 2px solid var(--gold);
     }
-    .c-icon.avatar img { width: 100%; height: 100%; object-fit: cover; }
-    .c-label { font-size: 12px; color: var(--muted); margin-bottom: 2px; }
+    .c-icon.avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .c-label {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 2px;
+    }
     .c-value {
-      font-family: 'IBM Plex Mono', monospace; font-size: 16px;
-      color: var(--ink); text-decoration: none;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 16px;
+      color: var(--ink);
+      text-decoration: none;
     }
     .whatsapp-btn {
-      display: flex; align-items: center; justify-content: center;
-      gap: 12px; background: #25D366; color: #fff;
-      padding: 16px; border-radius: 50px; font-weight: 600;
-      margin-top: 24px; font-size: 16px; border: none;
-      cursor: pointer; transition: background 0.2s; text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: #25D366;
+      color: #fff;
+      padding: 16px;
+      border-radius: 50px;
+      font-weight: 600;
+      margin-top: 24px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+      text-decoration: none;
     }
-    .whatsapp-btn:hover { background: #1FBE5A; }
+    .whatsapp-btn:hover {
+      background: #1FBE5A;
+    }
 
-    .contact-side h2 { font-size: 28px; margin-bottom: 14px; }
-    .contact-side p { color: var(--muted); margin-bottom: 20px; }
-    .contact-side ul { list-style: none; }
+    .contact-side h2 {
+      font-size: 28px;
+      margin-bottom: 14px;
+    }
+    .contact-side p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .contact-side ul {
+      list-style: none;
+    }
     .contact-side li {
-      font-size: 15px; color: var(--ink); padding: 10px 0;
-      border-top: 1px solid var(--line); padding-left: 28px;
+      font-size: 15px;
+      color: var(--ink);
+      padding: 10px 0;
+      border-top: 1px solid var(--line);
+      padding-left: 28px;
       position: relative;
     }
-    .contact-side li:first-child { border-top: 0; }
+    .contact-side li:first-child {
+      border-top: 0;
+    }
     .contact-side li::before {
-      content: "✓"; position: absolute; left: 0;
-      color: var(--fire); font-weight: 700;
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--fire);
+      font-weight: 700;
     }
     .office-address {
       background: var(--white);
@@ -382,318 +905,566 @@
       border-left: 4px solid var(--gold);
       margin-top: 16px;
     }
-    .office-address h4 { font-size: 16px; color: var(--fire); margin-bottom: 4px; }
-    .office-address p { color: var(--muted); font-size: 14px; }
+    .office-address h4 {
+      font-size: 16px;
+      color: var(--fire);
+      margin-bottom: 4px;
+    }
+    .office-address p {
+      color: var(--muted);
+      font-size: 14px;
+    }
 
-    /* ----- FOOTER ----- */
+    /* ========================================
+               FOOTER
+            ======================================== */
     footer {
-      background: #1A1A1A; color: #B9B9B9;
+      background: #1A1A1A;
+      color: #B9B9B9;
       padding: 40px 0 24px;
       border-top: 4px solid var(--gold);
     }
     .footer-top {
-      display: flex; justify-content: space-between;
-      align-items: center; flex-wrap: wrap; gap: 20px;
-      padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
     .footer-brand {
-      display: flex; align-items: center; gap: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
     }
     .footer-brand img {
-      height: 32px; width: 32px; object-fit: contain;
-      background: rgba(212,175,55,0.1); padding: 4px; border-radius: 6px;
+      height: 32px;
+      width: 32px;
+      object-fit: contain;
+      background: rgba(212, 175, 55, 0.1);
+      padding: 4px;
+      border-radius: 6px;
     }
     .footer-brand span {
-      color: #fff; font-weight: 600; font-family: 'Space Grotesk', sans-serif;
+      color: #fff;
+      font-weight: 600;
+      font-family: 'Space Grotesk', sans-serif;
     }
     .footer-links {
-      display: flex; gap: 24px; align-items: center;
+      display: flex;
+      gap: 24px;
+      align-items: center;
     }
     .footer-links a {
-      color: #B9B9B9; text-decoration: none; font-size: 14px;
+      color: #B9B9B9;
+      text-decoration: none;
+      font-size: 14px;
       transition: color 0.2s;
     }
-    .footer-links a:hover { color: var(--gold); }
-    .footer-values {
-      font-family: 'IBM Plex Mono', monospace; font-size: 12px;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      color: #6A6A6A; text-align: center; padding-top: 20px;
+    .footer-links a:hover {
+      color: var(--gold);
     }
-    .footer-values b { color: var(--gold); font-weight: 500; }
+    .footer-values {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #6A6A6A;
+      text-align: center;
+      padding-top: 20px;
+    }
+    .footer-values b {
+      color: var(--gold);
+      font-weight: 500;
+    }
     .footer-legal {
-      font-size: 13px; color: #6A6A6A; text-align: center;
+      font-size: 13px;
+      color: #6A6A6A;
+      text-align: center;
       margin-top: 10px;
     }
 
-    /* ----- RESPONSIVE ----- */
+    /* ========================================
+               RESPONSIVE
+            ======================================== */
     @media (max-width: 880px) {
-      .navlinks { display: none; flex-direction: column; width: 100%; }
-      .navlinks.open { display: flex; }
-      .hamburger { display: block; }
-      nav { flex-wrap: wrap; }
-      .navlinks a { padding: 12px 0; border-top: 1px solid rgba(255,255,255,0.06); }
-      .nav-cta { margin-top: 8px; }
+      .navlinks {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+      }
+      .navlinks.open {
+        display: flex;
+      }
+      .hamburger {
+        display: block;
+      }
+      nav {
+        flex-wrap: wrap;
+      }
+      .navlinks a {
+        padding: 12px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .nav-cta {
+        margin-top: 8px;
+      }
 
-      .hero-inner { grid-template-columns: 1fr; text-align: center; }
-      .hero-text p { margin-left: auto; margin-right: auto; }
-      .hero-text .sub-brand { text-align: left; }
-      .hero-image { order: -1; }
+      .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero-text p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .hero-text .sub-brand {
+        text-align: left;
+      }
+      .hero-image {
+        order: -1;
+      }
 
-      .service-grid { grid-template-columns: 1fr 1fr; }
-      .fleet-grid { grid-template-columns: 1fr; }
-      .why-grid { grid-template-columns: 1fr 1fr; }
-      .contact-grid { grid-template-columns: 1fr; }
+      .fleet-grid {
+        grid-template-columns: 1fr;
+      }
+      .repat-coverage {
+        grid-template-columns: 1fr 1fr;
+      }
+      .transport-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .service-cols {
+        grid-template-columns: 1fr 1fr;
+      }
+      .price-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .why-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
     }
     @media (max-width: 560px) {
-      .service-grid { grid-template-columns: 1fr; }
-      .why-grid { grid-template-columns: 1fr; }
-      .footer-top { flex-direction: column; text-align: center; }
-      .footer-links { flex-wrap: wrap; justify-content: center; }
-      .hero-text h1 { font-size: 32px; }
-      .hero-text .sub-brand { font-size: 18px; }
+      .repat-coverage {
+        grid-template-columns: 1fr;
+      }
+      .transport-grid {
+        grid-template-columns: 1fr;
+      }
+      .service-cols {
+        grid-template-columns: 1fr;
+      }
+      .price-grid {
+        grid-template-columns: 1fr;
+      }
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-top {
+        flex-direction: column;
+        text-align: center;
+      }
+      .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .hero-text h1 {
+        font-size: 32px;
+      }
+      .hero-text .sub-brand {
+        font-size: 18px;
+      }
     }
   </style>
 </head>
 <body>
 
-<!-- HEADER -->
-<header>
-  <nav>
-    <div class="brand">
-      <img src="logo.jpeg" alt="Expatriation 24Hrs" />
-      <span>EXPATRIATION <small>24HRS</small></span>
-    </div>
-    <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
-    <div class="navlinks" id="navlinks">
-      <a href="#services">Services</a>
-      <a href="#fleet">Our Fleet</a>
-      <a href="#why">Why Us</a>
-      <a href="#contact">Contact</a>
-      <a href="https://wa.me/26657428997" class="nav-cta">WhatsApp</a>
-    </div>
-  </nav>
-</header>
-
-<!-- HERO (Main Image & CTS Branding) -->
-<section class="hero">
-  <div class="wrap hero-inner">
-    <div class="hero-text">
-      <div class="sub-brand">EXPATRIATION CTS</div>
-      <h1>Corporate Transport &amp; <em>Dignified Repatriation</em></h1>
-      <p>Safe. Reliable. Professional. We take care of your mobility needs and deliver your loved ones to their final resting place with the utmost respect and honour.</p>
-      <div>
-        <a href="#contact" class="btn btn-gold">Get a Quote</a>
-        <a href="#fleet" class="btn btn-outline" style="margin-left:12px;">View Fleet</a>
-      </div>
-      <div class="hero-tagline">
-        <span>24/7 Availability</span> <span>Refrigerated Transport</span> <span>Family Member Seat</span>
-      </div>
-    </div>
-    <div class="hero-image">
-      <img src="IMG-20260828-WA0015.jpg" alt="Expatriation CTS Corporate Transport Solutions" />
-    </div>
-  </div>
-</section>
-
-<!-- PARTNERSHIP BANNER -->
-<div class="partnership-banner">
-  <div class="wrap">
-    <p>🤝 <strong>PARTNERSHIP OPPORTUNITY</strong> — We are looking to partner with <strong>Funeral Undertakers</strong> and <strong>Insurance Companies</strong> to serve families with dignity, respect, and reliable repatriation services across borders.</p>
-  </div>
-</div>
-
-<!-- SERVICES (Corporate Transport) -->
-<section class="sectors" id="services">
-  <div class="wrap">
-    <div class="sectors-head">
-      <div class="eyebrow">Our Services</div>
-      <h2>Corporate, Staff &amp; Group Transport Solutions</h2>
-      <p>We provide safe, reliable and confidential transport for corporates, staff, mining operations, events and long-distance transfers.</p>
-    </div>
-    <div class="service-grid">
-      <div class="service-card"><span class="icon">🏢</span><h3>Corporate Transport</h3><p>Executive &amp; business travel</p></div>
-      <div class="service-card"><span class="icon">👥</span><h3>Staff Transport</h3><p>Reliable employee shuttles</p></div>
-      <div class="service-card"><span class="icon">✈️</span><h3>Airport Transfers</h3><p>Punctual &amp; professional</p></div>
-      <div class="service-card"><span class="icon">⛏️</span><h3>Mining &amp; Site Transport</h3><p>Remote site logistics</p></div>
-      <div class="service-card"><span class="icon">🚌</span><h3>Group Travel</h3><p>Conferences &amp; events</p></div>
-      <div class="service-card"><span class="icon">🎤</span><h3>Events &amp; Conferences</h3><p>Seamless event logistics</p></div>
-      <div class="service-card"><span class="icon">🛣️</span><h3>Long Distance Transfers</h3><p>Cross-border &amp; national</p></div>
-      <div class="service-card" style="border-color: var(--gold);"><span class="icon">🕊️</span><h3 style="color:var(--fire);">Dignified Repatriation</h3><p>Honouring loved ones with respect</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- FLEET (Vehicles with specs) -->
-<section class="fleet" id="fleet">
-  <div class="wrap">
-    <div class="fleet-head">
-      <div class="eyebrow">Our Fleet</div>
-      <h2>Refrigerated &amp; Converted Vehicles</h2>
-      <p>Specially equipped to provide safe, hygienic and dignified transport for the departed, with family member accommodation.</p>
-    </div>
-    <div class="fleet-grid">
-      <!-- Toyota Noah -->
-      <div class="fleet-card">
-        <h3>Toyota Noah <small>Converted</small></h3>
-        <div class="vehicle-tag">Refrigerated Compartment</div>
-        <ul>
-          <li><span class="highlight">Driver | Passenger | Family Member Seat</span> — One family member may accompany the deceased</li>
-          <li><span class="highlight">Divider / Partition</span> — Complete divide for privacy and refrigeration</li>
-          <li><span class="highlight">Refrigerated &amp; Hygienic</span> — Maintains safe temperatures for respectful transport</li>
-          <li><span class="highlight">On-Time, Every Time</span> — Punctual and dependable service</li>
-        </ul>
-      </div>
-      <!-- Nissan Elgrand -->
-      <div class="fleet-card">
-        <h3>Nissan Elgrand <small>Converted</small></h3>
-        <div class="vehicle-tag">Premium Refrigerated</div>
-        <ul>
-          <li><span class="highlight">Driver | Passenger | Family Member Seat</span> — One family member may accompany the deceased</li>
-          <li><span class="highlight">Divider / Partition</span> — Complete divide for privacy and refrigeration</li>
-          <li><span class="highlight">Refrigerated Compartment</span> — For the respectful and safe transport of the deceased</li>
-          <li><span class="highlight">Luxury &amp; Comfort</span> — Premium interior for family members during transit</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WHY CHOOSE US (Dark background with Gold/Fire) -->
-<section class="why-cts" id="why">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Why Choose Us</div>
-      <h2>Driven by Trust, Committed to Excellence</h2>
-      <p>We deliver peace of mind with every journey.</p>
-    </div>
-    <div class="why-grid">
-      <div class="why-item"><span class="icon">👨‍✈️</span><h3>Professional Drivers</h3><p>Trained, experienced and compassionate</p></div>
-      <div class="why-item"><span class="icon">🚗</span><h3>Modern Fleet</h3><p>Well-maintained, comfortable vehicles</p></div>
-      <div class="why-item"><span class="icon">🔒</span><h3>Safe &amp; Confidential</h3><p>Discretion and privacy guaranteed</p></div>
-      <div class="why-item"><span class="icon">⏰</span><h3>24/7 Availability</h3><p>We are here when you need us most</p></div>
-      <div class="why-item"><span class="icon">📌</span><h3>Punctual &amp; Dependable</h3><p>On-time, every time</p></div>
-      <div class="why-item"><span class="icon">💰</span><h3>Affordable &amp; Transparent</h3><p>No hidden fees, clear pricing</p></div>
-      <div class="why-item"><span class="icon">🌍</span><h3>Cross-Border Expertise</h3><p>SA, Lesotho, Eswatini, Zimbabwe</p></div>
-      <div class="why-item" style="border-color:var(--gold);"><span class="icon">🕊️</span><h3 style="color:var(--gold);">Dignity &amp; Respect</h3><p>Honouring your loved ones</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT (with RJM picture, all numbers, offices) -->
-<section class="contact" id="contact">
-  <div class="wrap contact-grid">
-    <div class="contact-card">
-      <!-- Founder Row with RJM.jpeg -->
-      <div class="contact-row">
-        <div class="c-icon avatar">
-          <img src="RJM.jpeg" alt="Joseph Mnyele" />
-        </div>
-        <div>
-          <div class="c-label">Founder</div>
-          <div class="c-value" style="font-family:'IBM Plex Sans',sans-serif; font-weight:600;">Joseph Mnyele</div>
-        </div>
-      </div>
-
-      <div class="contact-row">
-        <div class="c-icon">📞</div>
-        <div>
-          <div class="c-label">Call us</div>
-          <a class="c-value" href="tel:+27718967799">+27 71 896 7799</a>
-        </div>
-      </div>
-      <div class="contact-row">
-        <div class="c-icon">📞</div>
-        <div>
-          <div class="c-label">Call us (Lesotho)</div>
-          <a class="c-value" href="tel:+26657428997">+266 5742 8997</a>
-        </div>
-      </div>
-      <div class="contact-row">
-        <div class="c-icon">📞</div>
-        <div>
-          <div class="c-label">Call us (Alt Line)</div>
-          <a class="c-value" href="tel:+26658833388">+266 5883 3388</a>
-        </div>
-      </div>
-      <div class="contact-row">
-        <div class="c-icon">✉️</div>
-        <div>
-          <div class="c-label">Email</div>
-          <a class="c-value" href="mailto:projects@lifefoundation.co.ls" style="font-family:'IBM Plex Sans',sans-serif; font-size:15px;">projects@lifefoundation.co.ls</a>
-        </div>
-      </div>
-      <div class="contact-row">
-        <div class="c-icon">💬</div>
-        <div>
-          <div class="c-label">WhatsApp</div>
-          <a class="c-value" href="https://wa.me/26657428997">+266 5742 8997</a>
-        </div>
-      </div>
-      <a href="https://wa.me/26657428997" class="whatsapp-btn">Message us on WhatsApp now</a>
-
-      <!-- Office Addresses -->
-      <div style="margin-top:24px; border-top:2px solid var(--gold); padding-top:20px;">
-        <div class="office-address">
-          <h4>📍 OFFICE – BLOEMFONTEIN</h4>
-          <p>Phase 2, Bloemfontein, South Africa</p>
-        </div>
-        <div class="office-address" style="margin-top:12px;">
-          <h4>📍 OFFICE – LADYBRAND</h4>
-          <p>Ladybrand, South Africa</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="contact-side">
-      <span class="eyebrow" style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--fire);">Get in touch</span>
-      <h2>Your Mobility Partner, 24 Hours a Day</h2>
-      <p>Reach out any hour — our team is ready to assist with corporate transport, repatriation, or any logistics need.</p>
-      <ul>
-        <li><strong>South Africa:</strong> +27 71 896 7799</li>
-        <li><strong>Lesotho:</strong> +266 5742 8997</li>
-        <li><strong>Alt Line:</strong> +266 5883 3388</li>
-        <li>Email: projects@lifefoundation.co.ls</li>
-        <li>Response within the hour, day or night</li>
-        <li>Free consultation &amp; quote</li>
-        <li>Transparent, fixed-fee pricing</li>
-        <li>Available across all 9 SA provinces to Lesotho, Eswatini &amp; Zimbabwe</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="wrap">
-    <div class="footer-top">
-      <div class="footer-brand">
+  <!-- ===== HEADER (logo.jpeg) ===== -->
+  <header>
+    <nav>
+      <div class="brand">
         <img src="logo.jpeg" alt="Expatriation 24Hrs" />
-        <span>EXPATRIATION 24HRS</span>
+        <span>EXPATRIATION <small>24HRS</small></span>
       </div>
-      <div class="footer-links">
-        <a href="#services">Services</a>
-        <a href="#fleet">Fleet</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+      <div class="navlinks" id="navlinks">
+        <a href="#repatriation">Repatriation</a>
+        <a href="#transport">Transport</a>
+        <a href="#business-services">Business Services</a>
         <a href="#why">Why Us</a>
         <a href="#contact">Contact</a>
+        <a href="https://wa.me/26657428997" class="nav-cta">WhatsApp</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== HERO (Expatriation CTS as Main) ===== -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <div class="sub-brand">EXPATRIATION CTS</div>
+        <h1>Corporate Transport &amp; <em>Dignified Repatriation</em></h1>
+        <p>Safe. Reliable. Professional. We take care of your mobility needs and deliver your loved ones to their final resting place with the utmost respect and honour.</p>
+        <div>
+          <a href="#repatriation" class="btn btn-gold">Our Fleet</a>
+          <a href="#contact" class="btn btn-outline" style="margin-left:12px;">Get a Quote</a>
+        </div>
+        <div class="hero-tagline">
+          <span>24/7 Availability</span> <span>Refrigerated Transport</span> <span>Family Member Seat</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="IMG-20260828-WA0015.jpg" alt="Expatriation CTS Corporate Transport Solutions" />
       </div>
     </div>
-    <div class="footer-values">
-      <b>Safe</b> · <b>Reliable</b> · <b>Professional</b> · <b>We Take Care</b> · <b>We Deliver</b>
-    </div>
-    <div class="footer-legal">
-      &copy; 2026 Expatriation 24Hrs. Corporate Transport · Staff Transport · Repatriation · Mining · Events.<br />
-      Offices: Phase 2, Bloemfontein &amp; Ladybrand. Call +27 71 896 7799 | +266 5742 8997 | +266 5883 3388
+  </section>
+
+  <!-- ===== PARTNERSHIP BANNER ===== -->
+  <div class="partnership-banner">
+    <div class="wrap">
+      <p>🤝 <strong>PARTNERSHIP OPPORTUNITY</strong> — We are looking to partner with <strong>Funeral Undertakers</strong> and <strong>Insurance Companies</strong> to serve families with dignity, respect, and reliable repatriation services across borders.</p>
     </div>
   </div>
-</footer>
 
-<!-- HAMBURGER TOGGLE -->
-<script>
-  document.getElementById('hamburger').addEventListener('click', function() {
-    var nav = document.getElementById('navlinks');
-    nav.classList.toggle('open');
-  });
-</script>
+  <!-- ===== SECTION 1: REPATRIATION & FLEET ===== -->
+  <section class="repatriation-main" id="repatriation">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Expatriation Services</div>
+        <h2>Bringing Loved Ones Home with <span class="fire">Respect &amp; Honor</span></h2>
+        <p>We provide comprehensive repatriation from anywhere in South Africa to Lesotho, Eswatini, and Zimbabwe. Our specialised vehicles ensure a dignified journey.</p>
+      </div>
+
+      <!-- Fleet Grid -->
+      <div class="fleet-grid">
+        <!-- Toyota Noah -->
+        <div class="fleet-card">
+          <h3>Toyota Noah <small>Converted</small></h3>
+          <div class="vehicle-tag">Refrigerated Compartment</div>
+          <ul>
+            <li><span class="highlight">Driver | Passenger | Family Member Seat</span> — One family member may accompany the deceased</li>
+            <li><span class="highlight">Divider / Partition</span> — Complete divide for privacy and refrigeration</li>
+            <li><span class="highlight">Refrigerated &amp; Hygienic</span> — Maintains safe temperatures for respectful transport</li>
+            <li><span class="highlight">On-Time, Every Time</span> — Punctual and dependable service</li>
+          </ul>
+        </div>
+        <!-- Nissan Elgrand -->
+        <div class="fleet-card">
+          <h3>Nissan Elgrand <small>Converted</small></h3>
+          <div class="vehicle-tag">Premium Refrigerated</div>
+          <ul>
+            <li><span class="highlight">Driver | Passenger | Family Member Seat</span> — One family member may accompany the deceased</li>
+            <li><span class="highlight">Divider / Partition</span> — Complete divide for privacy and refrigeration</li>
+            <li><span class="highlight">Refrigerated Compartment</span> — For the respectful and safe transport of the deceased</li>
+            <li><span class="highlight">Luxury &amp; Comfort</span> — Premium interior for family members during transit</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Coverage Areas -->
+      <div class="repat-coverage">
+        <div class="coverage-item">
+          <div class="icon">📍</div>
+          <h4>All 9 Provinces</h4>
+          <p>Gauteng, Western Cape, Eastern Cape, KwaZulu-Natal, Free State, Mpumalanga, Limpopo, North West, Northern Cape</p>
+        </div>
+        <div class="coverage-item">
+          <div class="icon">🌍</div>
+          <h4>Destinations</h4>
+          <p>Lesotho · Eswatini · Zimbabwe</p>
+        </div>
+        <div class="coverage-item">
+          <div class="icon">🤝</div>
+          <h4>Partnerships</h4>
+          <p>We partner with funeral undertakers and insurance companies to provide seamless service.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: CORPORATE TRANSPORT SERVICES ===== -->
+  <div class="wave-divider" style="background:var(--white);">
+    <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+      <path d="M0,40 C300,80 600,0 900,40 C1050,60 1150,20 1200,40 L1200,0 L0,0 Z" fill="#F8F5F0" />
+    </svg>
+  </div>
+  <section class="corporate-transport" id="transport">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Mobility Solutions</div>
+        <h2>Corporate, Staff &amp; Executive Transport</h2>
+        <p>Reliable, safe, and punctual transport for your workforce, executives, and group events – available 24 hours a day.</p>
+      </div>
+      <div class="transport-grid">
+        <div class="transport-card"><span class="emoji">🏢</span><h3>Corporate Transport</h3><p>Executive shuttles &amp; business travel</p></div>
+        <div class="transport-card"><span class="emoji">👥</span><h3>Staff Transport</h3><p>Daily employee pick-ups &amp; drop-offs</p></div>
+        <div class="transport-card"><span class="emoji">✈️</span><h3>Airport Transfers</h3><p>Punctual &amp; comfortable rides</p></div>
+        <div class="transport-card"><span class="emoji">⛏️</span><h3>Mining &amp; Site Transport</h3><p>Heavy-duty industrial logistics</p></div>
+        <div class="transport-card"><span class="emoji">🚌</span><h3>Group Travel</h3><p>Conferences &amp; team building</p></div>
+        <div class="transport-card"><span class="emoji">🎤</span><h3>Events &amp; Conferences</h3><p>Seamless event logistics</p></div>
+        <div class="transport-card"><span class="emoji">🛣️</span><h3>Long Distance Transfers</h3><p>Cross-border &amp; national routes</p></div>
+        <div class="transport-card" style="border-color: var(--gold);"><span class="emoji">🕊️</span><h3 style="color:var(--fire);">Dignified Repatriation</h3><p>Honouring loved ones with respect</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3: BUSINESS PLANS & ADMIN (ALL OTHER SERVICES) ===== -->
+  <div class="wave-divider" style="background:var(--diamond);">
+    <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+      <path d="M0,40 C300,80 600,0 900,40 C1050,60 1150,20 1200,40 L1200,0 L0,0 Z" fill="#FFFFFF" />
+    </svg>
+  </div>
+  <section class="business-services" id="business-services">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Additional Offerings</div>
+        <h2>Business Plans &amp; Corporate Services</h2>
+        <p>From bankable business plans to branding, marketing, and administrative support – we help your business grow.</p>
+      </div>
+
+      <!-- 3 Columns: Business Plans, Identity, Marketing/Admin -->
+      <div class="service-cols">
+        <!-- Column 1: Business Plans + Tender -->
+        <div class="service-col">
+          <span class="col-icon">📄</span>
+          <h3>Business <span>Plans</span></h3>
+          <ul>
+            <li>Starter Plan (R4,500 – R7,500)</li>
+            <li>Bankable Plan (R11,500 – R23,000)</li>
+            <li>Investor-Grade Plan (R32,000+)</li>
+            <li>Plan Review &amp; Repair (R3,200 – R5,800)</li>
+            <li>Tender Application Services (R1,000 – R3,000)</li>
+          </ul>
+          <div class="price-tag-sm">From <span>R1,000</span></div>
+          <a href="https://wa.me/26657428997" class="service-cta">Get a quote →</a>
+        </div>
+
+        <!-- Column 2: Corporate Identity -->
+        <div class="service-col">
+          <span class="col-icon">🎨</span>
+          <h3>Corporate <span>Identity</span></h3>
+          <ul>
+            <li>Logo Design (3 concepts, 2 revisions)</li>
+            <li>Letterhead &amp; Business Card Design</li>
+            <li>Company Profile Design (10–15 pages)</li>
+            <li>Brand Style Guide (10+ pages)</li>
+            <li>PowerPoint / Pitch Deck Redesign</li>
+          </ul>
+          <div class="price-tag-sm">From <span>R1,200</span> – R9,500</div>
+          <a href="https://wa.me/26657428997" class="service-cta">Get a quote →</a>
+        </div>
+
+        <!-- Column 3: Marketing & Admin Support -->
+        <div class="service-col">
+          <span class="col-icon">📈</span>
+          <h3>Marketing &amp; <span>Admin</span></h3>
+          <ul>
+            <li>Market Research &amp; Competitor Analysis</li>
+            <li>Social Media Setup &amp; Management</li>
+            <li>SEO Setup &amp; Google My Business</li>
+            <li>Business Registration (CIPC) &amp; B-BBEE Support</li>
+            <li>CV Writing, Formatting &amp; Virtual Assistant</li>
+          </ul>
+          <div class="price-tag-sm">From <span>R450</span> – R8,500</div>
+          <a href="https://wa.me/26657428997" class="service-cta">Get a quote →</a>
+        </div>
+      </div>
+
+      <!-- Detailed Business Plan Pricing (4 cards) -->
+      <div style="margin-top:40px;">
+        <h3 style="text-align:center; font-size:28px; margin-bottom:24px; color:var(--navy);">Business Plan Pricing <span style="color:var(--gold);">in ZAR</span></h3>
+        <div class="price-grid">
+          <div class="price-card">
+            <h3>Starter Plan</h3>
+            <p class="desc">Small loans, microgrants, internal planning</p>
+            <div class="price-amount">R4 500 <span>– R7 500</span></div>
+            <div class="price-turn">5–7 business days</div>
+            <ul class="price-list">
+              <li>15–20 page plan</li>
+              <li>3-year summary financials</li>
+              <li>One revision round</li>
+            </ul>
+            <a href="https://wa.me/26657428997" class="price-cta">Get started</a>
+          </div>
+          <div class="price-card featured">
+            <span class="price-tag">Most popular</span>
+            <h3>Bankable Plan</h3>
+            <p class="desc">Bank loans, SBA-style lending, angel raises</p>
+            <div class="price-amount">R11 500 <span>– R23 000</span></div>
+            <div class="price-turn">10–14 business days</div>
+            <ul class="price-list">
+              <li>25–35 page plan</li>
+              <li>Full 3–5 year financial model</li>
+              <li>Sensitivity analysis</li>
+            </ul>
+            <a href="https://wa.me/26657428997" class="price-cta">Get started</a>
+          </div>
+          <div class="price-card">
+            <h3>Investor-Grade Plan</h3>
+            <p class="desc">VC, institutional raises, franchise approval</p>
+            <div class="price-amount">R32 000 <span>– R75 000+</span></div>
+            <div class="price-turn">3–4 weeks</div>
+            <ul class="price-list">
+              <li>Full plan + pitch deck</li>
+              <li>Cap table + data room checklist</li>
+              <li>Unlimited revision round</li>
+            </ul>
+            <a href="https://wa.me/26657428997" class="price-cta">Get started</a>
+          </div>
+          <div class="price-card">
+            <h3>Plan Review &amp; Repair</h3>
+            <p class="desc">Existing draft that was rejected</p>
+            <div class="price-amount">R3 200 <span>– R5 800</span></div>
+            <div class="price-turn">5 business days</div>
+            <ul class="price-list">
+              <li>Gap analysis</li>
+              <li>Rewrite of weak sections</li>
+              <li>Lender-readiness check</li>
+            </ul>
+            <a href="https://wa.me/26657428997" class="price-cta">Get started</a>
+          </div>
+        </div>
+        <p style="text-align:center; font-size:14px; color:var(--muted); margin-top:20px;">All tiers include a structured intake call. Corporate services are quoted separately — ask for a bundle deal!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4: WHY US ===== -->
+  <div class="wave-divider" style="background:var(--white);">
+    <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+      <path d="M0,40 C300,80 600,0 900,40 C1050,60 1150,20 1200,40 L1200,0 L0,0 Z" fill="#1A1A1A" />
+    </svg>
+  </div>
+  <section class="why-cts" id="why">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Why Choose Expatriation 24Hrs</div>
+        <h2>Driven by Trust, Committed to Excellence</h2>
+        <p>We deliver peace of mind with every journey and every document.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-item"><span class="icon">👨‍✈️</span><h3>Professional Drivers</h3><p>Trained, experienced and compassionate</p></div>
+        <div class="why-item"><span class="icon">🚗</span><h3>Modern Fleet</h3><p>Well-maintained, refrigerated vehicles</p></div>
+        <div class="why-item"><span class="icon">🔒</span><h3>Safe &amp; Confidential</h3><p>Discretion and privacy guaranteed</p></div>
+        <div class="why-item"><span class="icon">⏰</span><h3>24/7 Availability</h3><p>We are here when you need us most</p></div>
+        <div class="why-item"><span class="icon">📌</span><h3>Punctual &amp; Dependable</h3><p>On-time, every time</p></div>
+        <div class="why-item"><span class="icon">💰</span><h3>Affordable &amp; Transparent</h3><p>No hidden fees, clear pricing</p></div>
+        <div class="why-item"><span class="icon">🌍</span><h3>Cross-Border Expertise</h3><p>SA, Lesotho, Eswatini, Zimbabwe</p></div>
+        <div class="why-item" style="border-color:var(--gold);"><span class="icon">📊</span><h3 style="color:var(--gold);">Business &amp; Admin Expertise</h3><p>Bankable plans, branding, and support</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT (RJM.jpeg, All Numbers, Offices) ===== -->
+  <div class="wave-divider" style="background:#1A1A1A;">
+    <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+      <path d="M0,40 C300,80 600,0 900,40 C1050,60 1150,20 1200,40 L1200,0 L0,0 Z" fill="#FFFFFF" />
+    </svg>
+  </div>
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-card">
+        <!-- Founder -->
+        <div class="contact-row">
+          <div class="c-icon avatar">
+            <img src="RJM.jpeg" alt="Joseph Mnyele" />
+          </div>
+          <div>
+            <div class="c-label">Founder</div>
+            <div class="c-value" style="font-family:'IBM Plex Sans',sans-serif; font-weight:600;">Joseph Mnyele</div>
+          </div>
+        </div>
+        <!-- Numbers -->
+        <div class="contact-row">
+          <div class="c-icon">📞</div>
+          <div><div class="c-label">Call us (South Africa)</div><a class="c-value" href="tel:+27718967799">+27 71 896 7799</a></div>
+        </div>
+        <div class="contact-row">
+          <div class="c-icon">📞</div>
+          <div><div class="c-label">Call us (Lesotho)</div><a class="c-value" href="tel:+26657428997">+266 5742 8997</a></div>
+        </div>
+        <div class="contact-row">
+          <div class="c-icon">📞</div>
+          <div><div class="c-label">Call us (Alt Line)</div><a class="c-value" href="tel:+26658833388">+266 5883 3388</a></div>
+        </div>
+        <div class="contact-row">
+          <div class="c-icon">✉️</div>
+          <div><div class="c-label">Email</div><a class="c-value" href="mailto:projects@lifefoundation.co.ls" style="font-family:'IBM Plex Sans',sans-serif; font-size:15px;">projects@lifefoundation.co.ls</a></div>
+        </div>
+        <div class="contact-row">
+          <div class="c-icon">💬</div>
+          <div><div class="c-label">WhatsApp</div><a class="c-value" href="https://wa.me/26657428997">+266 5742 8997</a></div>
+        </div>
+        <a href="https://wa.me/26657428997" class="whatsapp-btn">Message us on WhatsApp now</a>
+
+        <!-- Offices -->
+        <div style="margin-top:24px; border-top:2px solid var(--gold); padding-top:20px;">
+          <div class="office-address">
+            <h4>📍 OFFICE – BLOEMFONTEIN</h4>
+            <p>Phase 2, Bloemfontein, South Africa</p>
+          </div>
+          <div class="office-address" style="margin-top:12px;">
+            <h4>📍 OFFICE – LADYBRAND</h4>
+            <p>Ladybrand, South Africa</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-side">
+        <span class="eyebrow" style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--fire);">Get in touch</span>
+        <h2>Your Mobility &amp; Business Partner, 24 Hours a Day</h2>
+        <p>Reach out any hour — our team is ready to assist with repatriation, corporate transport, business plans, or any of our services.</p>
+        <ul>
+          <li><strong>South Africa:</strong> +27 71 896 7799</li>
+          <li><strong>Lesotho:</strong> +266 5742 8997</li>
+          <li><strong>Alt Line:</strong> +266 5883 3388</li>
+          <li>Email: projects@lifefoundation.co.ls</li>
+          <li>Response within the hour, day or night</li>
+          <li>Free consultation &amp; quote</li>
+          <li>Transparent, fixed-fee pricing</li>
+          <li>Available across all 9 SA provinces to Lesotho, Eswatini &amp; Zimbabwe</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER (logo.jpeg) ===== -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="logo.jpeg" alt="Expatriation 24Hrs" />
+          <span>EXPATRIATION 24HRS</span>
+        </div>
+        <div class="footer-links">
+          <a href="#repatriation">Repatriation</a>
+          <a href="#transport">Transport</a>
+          <a href="#business-services">Business</a>
+          <a href="#why">Why Us</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-values">
+        <b>Safe</b> · <b>Reliable</b> · <b>Professional</b> · <b>We Take Care</b> · <b>We Deliver</b>
+      </div>
+      <div class="footer-legal">
+        &copy; 2026 Expatriation 24Hrs. Corporate Transport · Repatriation · Business Plans · Branding · Marketing · Admin Support.<br />
+        Offices: Phase 2, Bloemfontein &amp; Ladybrand. Call +27 71 896 7799 | +266 5742 8997 | +266 5883 3388
+      </div>
+    </div>
+  </footer>
+
+  <!-- HAMBURGER TOGGLE -->
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+      var nav = document.getElementById('navlinks');
+      nav.classList.toggle('open');
+    });
+  </script>
 
 </body>
 </html>
