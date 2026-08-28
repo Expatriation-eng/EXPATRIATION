@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Expatriation 24Hrs — Bankable Business Plans</title>
-  <meta name="description" content="Expatriation 24Hrs writes bankable business plans for mining, agriculture, IT, financial services and tender applications — available 24/7.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expatriation 24Hrs — Bankable Business Plans & Corporate Services</title>
+  <meta name="description" content="Expatriation 24Hrs writes bankable business plans and offers corporate identity, marketing, and administration services for mining, agriculture, IT, and financial services." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet" />
   <style>
     /* ----- RESET & VARIABLES ----- */
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -51,7 +51,7 @@
     .btn-purple { background: var(--purple); color: #fff; }
     .btn-purple:hover { background: #9B4FDE; transform: scale(1.03); }
 
-    /* ----- WAVES & SHAPES ----- */
+    /* ----- WAVES ----- */
     .wave-divider {
       position: relative;
       width: 100%;
@@ -237,7 +237,7 @@
     .q-it .quad-icon { background: var(--teal); }
     .q-fin .quad-icon { background: var(--purple); }
 
-    /* ----- WHY / VALUE (with wave) ----- */
+    /* ----- WHY / VALUE ----- */
     .why {
       padding: 80px 0;
       background: var(--card);
@@ -261,14 +261,118 @@
     .why-item h3 { font-size: 20px; margin-bottom: 8px; }
     .why-item p { color: var(--muted); font-size: 15px; }
 
-    /* ----- PRICING ----- */
+    /* ----- NEW: CORPORATE & ADMIN SERVICES ----- */
+    .corporate-services {
+      padding: 80px 0;
+      background: linear-gradient(180deg, var(--bg) 0%, #FFFFFF 100%);
+    }
+    .corporate-services .section-head {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .corporate-services .section-head .eyebrow {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+    }
+    .corporate-services .section-head h2 {
+      font-size: 32px;
+      margin: 8px 0 10px;
+    }
+    .corporate-services .section-head p {
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .service-cols {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 20px;
+    }
+    .service-col {
+      background: var(--card);
+      border-radius: 20px;
+      padding: 32px 24px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+      border: 1px solid var(--line);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .service-col:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+    }
+    .service-col .col-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .service-col h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: var(--navy);
+    }
+    .service-col h3 span {
+      color: var(--gold-dark);
+    }
+    .service-col ul {
+      list-style: none;
+      margin: 12px 0 16px;
+    }
+    .service-col ul li {
+      font-size: 14px;
+      color: var(--ink);
+      padding: 6px 0 6px 24px;
+      position: relative;
+      border-bottom: 1px solid var(--line);
+    }
+    .service-col ul li:last-child { border-bottom: 0; }
+    .service-col ul li::before {
+      content: "✦";
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+    }
+    .service-col .price-tag-sm {
+      display: inline-block;
+      background: var(--navy);
+      color: #fff;
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 14px;
+      margin-top: 8px;
+    }
+    .service-col .price-tag-sm span {
+      color: var(--gold);
+    }
+    .service-col .service-cta {
+      display: inline-block;
+      margin-top: 16px;
+      color: var(--gold-dark);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 2px;
+      transition: color 0.2s;
+    }
+    .service-col .service-cta:hover {
+      color: var(--navy);
+    }
+
+    /* ----- PRICING (Business Plans + Tender) ----- */
     .pricing {
       padding: 80px 0;
       background: var(--bg);
     }
     .price-grid {
-      display: grid; grid-template-columns: repeat(4, 1fr);
-      gap: 24px; margin-top: 44px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 44px;
     }
     .price-card {
       background: var(--card); border-radius: 20px;
@@ -331,7 +435,7 @@
       margin-top: 32px;
     }
 
-    /* ----- PROCESS (with wave) ----- */
+    /* ----- PROCESS ----- */
     .process {
       padding: 80px 0;
       background: var(--navy);
@@ -440,7 +544,7 @@
       letter-spacing: 0.1em; text-transform: uppercase;
       color: #8A90A8; text-align: center; padding-top: 20px;
     }
-    .footer-values b { color: var(--gold-light); font-weight: 500; }
+    .footer-values b { color: var(--gold); font-weight: 500; }
     .footer-legal {
       font-size: 13px; color: #7A8098; text-align: center;
       margin-top: 10px;
@@ -459,12 +563,14 @@
       .hero p.lead { font-size: 16px; }
 
       .why-grid { grid-template-columns: 1fr; }
+      .service-cols { grid-template-columns: 1fr 1fr; }
       .price-grid { grid-template-columns: 1fr 1fr; }
       .steps { grid-template-columns: 1fr 1fr; }
       .contact-grid { grid-template-columns: 1fr; }
       .quad-wrap { max-width: 100%; }
     }
     @media (max-width: 560px) {
+      .service-cols { grid-template-columns: 1fr; }
       .price-grid { grid-template-columns: 1fr; }
       .steps { grid-template-columns: 1fr; }
       .footer-top { flex-direction: column; text-align: center; }
@@ -481,12 +587,13 @@
 <header>
   <nav>
     <div class="brand">
-      <img src="logo.jpeg" alt="Expatriation 24Hrs">
+      <img src="RJM.jpeg" alt="Expatriation 24Hrs" />
       <span>EXPATRIATION <small>24HRS</small></span>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
     <div class="navlinks" id="navlinks">
       <a href="#sectors">Industries</a>
+      <a href="#services">Corporate &amp; Admin</a>
       <a href="#pricing">Pricing</a>
       <a href="#process">Process</a>
       <a href="#contact">Contact</a>
@@ -498,13 +605,13 @@
 <!-- HERO -->
 <section class="hero">
   <div class="wrap hero-inner">
-    <img src="logo.jpeg" alt="Expatriation 24Hrs" class="hero-logo">
+    <img src="RJM.jpeg" alt="Expatriation 24Hrs" class="hero-logo" />
     <div class="badge-live"><span class="dot"></span> AVAILABLE 24/7 · WHATSAPP READY</div>
-    <h1>Bankable business plans for <em>any industry</em>, built to survive scrutiny.</h1>
-    <p class="lead">We write the plan a bank, lender, or investor actually relies on — not a template. Mining, agriculture, IT, financial services, and tender applications.</p>
+    <h1>Bankable business plans &amp; <em>complete corporate services</em></h1>
+    <p class="lead">From mining to marketing, we help you look credible, win tenders, and secure funding — all under one roof.</p>
     <div class="hero-ctas">
       <a href="https://wa.me/2665742896" class="btn btn-gold">Chat on WhatsApp</a>
-      <a href="#pricing" class="btn btn-outline">View Pricing</a>
+      <a href="#services" class="btn btn-outline">Explore Services</a>
     </div>
     <div class="hero-tagline">
       <span>Innovation</span> <span>Integrity</span> <span>Growth</span> <span>Partnership</span>
@@ -545,13 +652,12 @@
   </div>
 </section>
 
-<!-- WHY (with wave divider) -->
+<!-- WHY -->
 <div class="wave-divider">
   <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
-    <path d="M0,40 C300,80 600,0 900,40 C1050,60 1150,20 1200,40 L1200,0 L0,0 Z" fill="#F8F6F0"/>
+    <path d="M0,40 C300,80 600,0 900,40 C1050,60 1150,20 1200,40 L1200,0 L0,0 Z" fill="#F8F6F0" />
   </svg>
 </div>
-
 <section class="why">
   <div class="wrap">
     <div class="section-head" style="text-align:center;">
@@ -578,15 +684,78 @@
   </div>
 </section>
 
-<!-- PRICING -->
+<!-- NEW: CORPORATE & ADMIN SERVICES -->
+<section class="corporate-services" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Beyond Business Plans</div>
+      <h2>Corporate Identity, Marketing &amp; Admin Support</h2>
+      <p>Everything your business needs to look professional, get noticed, and run smoothly — all at fair, market‑related prices.</p>
+    </div>
+
+    <div class="service-cols">
+
+      <!-- Column 1: Corporate Identity -->
+      <div class="service-col">
+        <span class="col-icon">🎨</span>
+        <h3>Corporate <span>Identity</span></h3>
+        <ul>
+          <li>Logo Design (3 concepts, 2 revisions)</li>
+          <li>Letterhead &amp; Business Card Design</li>
+          <li>Company Profile Design (10–15 pages)</li>
+          <li>Brand Style Guide (10+ pages)</li>
+          <li>PowerPoint / Pitch Deck Redesign</li>
+        </ul>
+        <div class="price-tag-sm">From <span>R1,200</span> – R9,500</div>
+        <a href="https://wa.me/2665742896" class="service-cta">Get a quote →</a>
+      </div>
+
+      <!-- Column 2: Marketing Services -->
+      <div class="service-col">
+        <span class="col-icon">📈</span>
+        <h3>Marketing <span>Services</span></h3>
+        <ul>
+          <li>Market Research &amp; Competitor Analysis</li>
+          <li>Website Copywriting (5–10 pages)</li>
+          <li>Social Media Setup (3 platforms)</li>
+          <li>SEO Setup &amp; Google My Business</li>
+          <li>Flyer / Brochure Design</li>
+          <li>Monthly Social Media Management</li>
+        </ul>
+        <div class="price-tag-sm">From <span>R1,500</span> – R8,500</div>
+        <a href="https://wa.me/2665742896" class="service-cta">Get a quote →</a>
+      </div>
+
+      <!-- Column 3: Administration -->
+      <div class="service-col">
+        <span class="col-icon">🧑‍💼</span>
+        <h3>Administration <span>Support</span></h3>
+        <ul>
+          <li>Business Registration Assistance (CIPC)</li>
+          <li>B-BBEE Verification Support</li>
+          <li>CV &amp; Executive Profile Writing</li>
+          <li>Document Formatting &amp; Proofreading</li>
+          <li>Virtual Admin Assistant (hourly)</li>
+          <li>Full Tender Submission Management</li>
+        </ul>
+        <div class="price-tag-sm">From <span>R450</span> – R6,500</div>
+        <a href="https://wa.me/2665742896" class="service-cta">Get a quote →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRICING (Business Plans + Tender) -->
 <section class="pricing" id="pricing">
   <div class="wrap">
     <div class="section-head" style="text-align:center;">
       <span class="eyebrow" style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-dark);">Pricing in ZAR</span>
-      <h2 style="font-size:32px;margin:8px 0 10px;">Choose the tier that matches your raise</h2>
+      <h2 style="font-size:32px;margin:8px 0 10px;">Business Plans &amp; Tender Services</h2>
       <p style="color:var(--muted);max-width:600px;margin:0 auto;">Fixed pricing, milestone billing. Quotes confirmed after a short intake call.</p>
     </div>
     <div class="price-grid">
+      <!-- Starter -->
       <div class="price-card">
         <h3>Starter Plan</h3>
         <p class="desc">Small loans, microgrants, internal planning</p>
@@ -599,6 +768,7 @@
         </ul>
         <a href="https://wa.me/2665742896" class="price-cta">Get started</a>
       </div>
+      <!-- Bankable (featured) -->
       <div class="price-card featured">
         <span class="price-tag">Most popular</span>
         <h3>Bankable Plan</h3>
@@ -612,6 +782,7 @@
         </ul>
         <a href="https://wa.me/2665742896" class="price-cta">Get started</a>
       </div>
+      <!-- Investor-Grade -->
       <div class="price-card">
         <h3>Investor-Grade Plan</h3>
         <p class="desc">VC, institutional raises, franchise approval</p>
@@ -624,6 +795,7 @@
         </ul>
         <a href="https://wa.me/2665742896" class="price-cta">Get started</a>
       </div>
+      <!-- Plan Review -->
       <div class="price-card">
         <h3>Plan Review &amp; Repair</h3>
         <p class="desc">Existing draft that was rejected</p>
@@ -636,7 +808,7 @@
         </ul>
         <a href="https://wa.me/2665742896" class="price-cta">Get started</a>
       </div>
-      <!-- TENDER APPLICATION SERVICES (new) -->
+      <!-- Tender Application (new) -->
       <div class="price-card" style="grid-column: span 1;">
         <h3>Tender Application Services</h3>
         <p class="desc">Tender submission &amp; application support</p>
@@ -651,17 +823,16 @@
         <a href="https://wa.me/2665742896" class="price-cta">Get started</a>
       </div>
     </div>
-    <p class="price-note">All tiers include a structured intake call and a financial model built on your own numbers.</p>
+    <p class="price-note">All business plan tiers include a structured intake call and a financial model built on your own numbers. Corporate services are quoted separately — ask us for a bundle deal!</p>
   </div>
 </section>
 
-<!-- PROCESS (with wave divider) -->
+<!-- PROCESS (with wave) -->
 <div class="wave-divider">
   <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
-    <path d="M0,40 C300,80 600,0 900,40 C1050,60 1150,20 1200,40 L1200,0 L0,0 Z" fill="#0B1A33"/>
+    <path d="M0,40 C300,80 600,0 900,40 C1050,60 1150,20 1200,40 L1200,0 L0,0 Z" fill="#0B1A33" />
   </svg>
 </div>
-
 <section class="process" id="process">
   <div class="wrap">
     <div class="section-head" style="text-align:center;">
@@ -726,11 +897,12 @@
   <div class="wrap">
     <div class="footer-top">
       <div class="footer-brand">
-        <img src="logo.jpeg" alt="Expatriation 24Hrs">
+        <img src="RJM.jpeg" alt="Expatriation 24Hrs" />
         <span>EXPATRIATION 24HRS</span>
       </div>
       <div class="footer-links">
         <a href="#sectors">Industries</a>
+        <a href="#services">Corporate &amp; Admin</a>
         <a href="#pricing">Pricing</a>
         <a href="#process">Process</a>
         <a href="#contact">Contact</a>
@@ -740,7 +912,7 @@
       <b>Innovation</b> · <b>Integrity</b> · <b>Growth</b> · <b>Partnership</b>
     </div>
     <div class="footer-legal">
-      &copy; 2026 Expatriation 24Hrs. Mining · Agriculture · IT · Financial Services · Tender Applications.<br>
+      &copy; 2026 Expatriation 24Hrs. Mining · Agriculture · IT · Financial Services · Tender Applications · Corporate Identity · Marketing · Admin Support.<br />
       Prices in ZAR, confirmed at intake. Call +27 71 896 7799 | WhatsApp +266 5742 896
     </div>
   </div>
